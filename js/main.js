@@ -18,7 +18,7 @@ function renderPortfolio() {
               <i class="fa fa-plus fa-3x"></i>
             </div>
           </div>
-          <img class="img-fluid" src="img/portfolio/01-thumbnail.jpg" alt="">
+          <img class="img-fluid portfolio-img" src="img/portfolio/${project.id}.jpg" alt="">
         </a>
         <div class="portfolio-caption">
           <h4>${project.title} 
@@ -39,7 +39,7 @@ function renderModal(idStr) {
 
     const strHTML = `<h2>${project.name}</h2>
     <p class="item-intro text-muted">${project.title}</p>
-    <img class="img-fluid d-block mx-auto" src="img/portfolio/01-full.jpg" alt="">
+    <img class="img-fluid d-block mx-auto" src="img/portfolio/${project.id}.jpg" alt="">
     <p>${project.desc}</p>
     <ul class="list-inline">
       <li>Date Published: ${date.getMonth() + 1} / ${date.getFullYear()}</li>
