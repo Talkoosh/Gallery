@@ -2,7 +2,7 @@
 
 var gProjects = [
     {
-        id: 'book-shop',
+        id: 'bookShop',
         name: 'Book-Shop',
         title: 'Managing Books',
         desc: "A book shop site for managing inventory",
@@ -11,7 +11,7 @@ var gProjects = [
         labels: ['MVC', 'CRUDL']
     },
     {
-        id: 'guess-me',
+        id: 'guessMe',
         name: 'Guess-Me',
         title: 'Guessing Game',
         desc: "A guess-who game, similar to Akinator",
@@ -38,7 +38,7 @@ var gProjects = [
         labels: ['DOM-manipulation', '']
     },
     {
-        id: 'safe-content',
+        id: 'safeContent',
         name: 'Safe Content',
         title: 'Safe Content Site',
         desc: "A user database with admin functionality",
@@ -47,7 +47,7 @@ var gProjects = [
         labels: ['Local Storage', 'MVC']
     },
     {
-        id: 'touch-nums',
+        id: 'touchNums',
         name: 'Touch-Nums',
         title: 'Touch-Nums game',
         desc: "A touch-nums game",
@@ -60,4 +60,10 @@ var gProjects = [
 
 function getProjects(){
     return gProjects.slice();
+}
+
+function getProject(id){
+    return gProjects.find(function(project){
+        return project.id === id;
+    })
 }
