@@ -6,7 +6,7 @@ var gProjects = [
         name: 'Book-Shop',
         title: 'Managing Books',
         desc: "A book shop site for managing inventory",
-        url="projects/book-shop",
+        url: "projects/book-shop",
         publishedAt: Date.now(),
         labels: ['MVC', 'CRUDL']
     },
@@ -15,7 +15,7 @@ var gProjects = [
         name: 'Guess-Me',
         title: 'Guessing Game',
         desc: "A guess-who game, similar to Akinator",
-        url="projects/guess-me",
+        url: "projects/guess-me",
         publishedAt: Date.now(),
         labels: ['jQuery', 'Bootstrap']
     },
@@ -24,7 +24,7 @@ var gProjects = [
         name: 'Minesweeper',
         title: 'Minesweeper Game',
         desc: "A fully functional Minesweeper game",
-        url="projects/minesweeper",
+        url: "projects/minesweeper",
         publishedAt: Date.now(),
         labels: ['DOM-manipulation', 'Database']
     },
@@ -33,7 +33,7 @@ var gProjects = [
         name: 'Pacman',
         title: 'Pacman Game',
         desc: "A minimalistic Pacman game",
-        url="projects/pacman",
+        url: "projects/pacman",
         publishedAt: Date.now(),
         labels: ['DOM-manipulation', '']
     },
@@ -42,7 +42,7 @@ var gProjects = [
         name: 'Safe Content',
         title: 'Safe Content Site',
         desc: "A user database with admin functionality",
-        url="projects/safe-content",
+        url: "projects/safe-content",
         publishedAt: Date.now(),
         labels: ['Local Storage', 'MVC']
     },
@@ -51,7 +51,7 @@ var gProjects = [
         name: 'Touch-Nums',
         title: 'Touch-Nums game',
         desc: "A touch-nums game",
-        url="projects/touch-nums",
+        url: "projects/touch-nums",
         publishedAt: Date.now(),
         labels: ['DOM-manipulation', '']
     },

@@ -22,8 +22,11 @@ function renderPortfolio() {
         </a>
         <div class="portfolio-caption">
           <h4>${project.title}</h4>
-          <p class="${project.desc}">Illustration</p>
+          <p class="text-muted">${project.desc}</p>
         </div>
       </div>`
     })
+    console.log(strHTML)
+
+    $('.projects-row').html(strHTML)
 }
