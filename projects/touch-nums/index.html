@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/main.css">
+    <title>Touch the Numbers </title>
+</head>
+<body onload="init(4)">
+    <h1>Touch The Numbers In Order!</h1> 
+    <div class="timer">Timer:</div>
+    <button class="hide" onclick="resetGame(this)">Reset Game</button>
+    <div class="difficulty-buttons">
+        <button onclick="init(4)">Easy</button>  
+        <button onclick="init(7)">Medium</button>  
+        <button onclick="init(9)">Hard</button>  
+    </div>
+    <table>
+    </table>
+   
+    <script src="js/main.js"></script>
+</body>
+</html>

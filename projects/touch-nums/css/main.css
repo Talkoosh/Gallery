@@ -1,0 +1,35 @@
+.cell{
+    text-align:center;
+    border: solid 1px black;
+    width: 100px;
+    height: 100px;
+    background-color: yellow;
+}
+
+.cell:not(.pressed-cell):hover{
+    background-color: rgb(223, 223, 79);
+    cursor:pointer;
+}
+
+ .pressed-cell{
+    background-color: grey;
+ }
+
+ .timer{
+    font-size: 20px;
+    color:green;
+    margin-bottom: 30px;
+ }
+
+ button{
+    margin-bottom: 20px;
+    width: 100px;
+ }
+ 
+ button:hover{
+     cursor: pointer;
+ }
+
+ .hide{
+     display: none;
+ }

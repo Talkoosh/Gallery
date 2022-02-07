@@ -1,0 +1,26 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    display:flex;
+    align-items: center;
+    margin: 0;
+    width: 100vw;
+    height: 100vh;
+}
+
+table{
+    width: 100%;
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+td{
+    border-top:0.5px solid black;
+    border-left: 1px solid black;
+}
+
+th{
+    background-color: red;
+}

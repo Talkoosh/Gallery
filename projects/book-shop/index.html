@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/main.css">
+    <title>Book Shop</title>
+</head>
+
+<body onload="onInit()">
+    <h1>The Book Shop</h1>
+    <section class="main-content">
+        <div class="add-book-container">
+            <input name="book-name" type="text" placeholder="Book Name">
+            <input name="book-price" type="number" min="0" placeholder="Book Price $">
+            <button onclick="onAddBook()" class="add-book-button">Add Book</button>
+        </div>
+        <table>
+            <thead>
+                <tr>
+                    <th onclick="onSortBooks('id')">ID</th>
+                    <th onclick="onSortBooks('title')">Title</th>
+                    <th onclick="onSortBooks('price')">Price</th>
+                    <th onclick="onSortBooks('rating')">Rating</th>
+                    <th colspan="3">Actions</th>
+                </tr>
+            </thead>
+            <tbody>
+            </tbody>
+        </table>
+    </section>
+    <section class="page-buttons">
+        <button class="backward-button" onclick="onNextPage('backward')">&lt;&lt;</button>
+        <div class="page-numbers"></div>
+        <button class="forward-button" onclick="onNextPage('forward')">&gt;&gt;</button>
+    </section>
+    <div class="price-modal">
+        <input name="update-input" type="number">
+        <button onclick="onPriceModalButtonClick(this)" data-id="">Update Price</button>
+    </div>
+    <div class="read-modal">
+        <button class="modal-exit-button" onclick="onModalExit()">X</button>
+        <div class="book-info">
+            <h3></h3>
+            <h4>price: <span class="read-price"></span></h4>
+        </div>
+        <p class="read-summary"></p>
+        <div class="book-rating">
+            <span>Book Rating:</span>
+            <div class="rating-input"></div>
+        </div>
+    </div>
+    <script src="js/service/book-shop-storage-service.js"></script>
+    <script src="js/service/book-shop-service.js"></script>
+    <script src="js/book-shop-controller.js"></script>
+</body>
+
+</html>
