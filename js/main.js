@@ -44,10 +44,15 @@ function renderModal(idStr){
     <ul class="list-inline">
       <li>Date Published: ${date.getMonth() + 1} / ${date.getFullYear()}</li>
     </ul>
+    <button onclick="onGoToProject('${project.url}')" type="button" class="btn btn-success mb-2">Try it out!</button>
+    <br>
     <button class="btn btn-primary" data-dismiss="modal" type="button">
         <i class="fa fa-times"></i>
-        Close Project</button>`
-        debugger
+        Close Project</button>`;
     const $modal = $('#portfolioModal');
     $modal.find('.modal-body').html(strHTML);
+}
+
+function onGoToProject(projectURL){
+    window.location.href=projectURL
 }
